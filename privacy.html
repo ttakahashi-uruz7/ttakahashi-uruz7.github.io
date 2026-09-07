@@ -39,15 +39,21 @@
           <li>data needed to load, synchronize, organize, or manage the user's local project data.</li>
         </ul>
         <p>
-          The current Google Workspace integration is read-oriented: it reads Drive metadata,
-          Google Docs text, and Google Sheets values for local application workflows. It does
-          not claim that every possible Google service or data type is used.
+          Google Workspace access depends on the workflow requested by the user. Baseline and
+          Master sources are read for reference. When the user explicitly requests a Working
+          Reset, the application may write to the Working Test Dataset, including deleting
+          selected Working files or folders, creating folders, and copying source data. The
+          application does not perform ordinary writes to Production sources as part of its
+          normal workflows. It does not claim that every possible Google service or data type
+          is used.
         </p>
 
         <h2>4. Purpose of use</h2>
         <p>
-          Google API data is used only for functions requested by the user, including loading
-          and managing the user's own novel-project data in the local application.
+          Google API data is used only for functions explicitly requested by the user, including
+          loading and managing the user's own novel-project data and carrying out a requested
+          Working Reset. Any Working Test Dataset deletion, folder creation, or copy operation
+          is performed only as part of that requested workflow.
         </p>
 
         <h2>5. Data sharing and limited use</h2>
@@ -93,8 +99,11 @@
           Novel Studio は主にローカルで動作する個人利用向けアプリケーションです。
           ユーザーが明示的に許可した場合に限り、Google Drive のファイルメタデータ、
           Google Docs のテキスト、Google Sheets の値など、ユーザー自身の小説制作データを
-          読み込み、ローカルのプロジェクト管理に利用します。Google ユーザーデータを販売せず、
-          広告に利用せず、無関係な第三者へ提供しません。ローカルに保存されたデータや設定は、
+          読み込み、ローカルのプロジェクト管理に利用します。Baseline / Master は参照用に
+          読み取り、ユーザーが Working Reset を明示的に要求した場合に限り、Working Test
+          Dataset のファイル・フォルダ削除、フォルダ作成、コピーなどの書き込みを行います。
+          Production への通常の書き込みは行いません。Google ユーザーデータを販売せず、広告に
+          利用せず、無関係な第三者へ提供しません。ローカルに保存されたデータや設定は、
           ユーザーが削除するまで保持される場合があります。アクセスは Google アカウントの
           接続済みアプリ設定から取り消せます。
         </p>
