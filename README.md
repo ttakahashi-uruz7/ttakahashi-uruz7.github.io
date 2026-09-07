@@ -1,6 +1,6 @@
-# Novel AI Studio public information site
+# Novel Studio public information site
 
-This repository contains the public, static GitHub Pages site used for Novel AI Studio's
+This repository contains the public, static GitHub Pages site used for Novel Studio's
 application information, privacy policy, and terms of service.
 
 The site has no JavaScript, external libraries, CDN assets, cookies, analytics, advertising, or
